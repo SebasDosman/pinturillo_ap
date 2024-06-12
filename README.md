@@ -22,6 +22,7 @@ Welcome to our Gartic-Clone project! This application is a recreation of the pop
    cd gartic-clone
    ```
 2. **Install dependencies**
+
    For the front-end:
    ```bash
    cd pinturillo_app_front
@@ -33,6 +34,7 @@ Welcome to our Gartic-Clone project! This application is a recreation of the pop
    npm install
    ```
 3. **Run the Application**
+
    Start the back-end server:
    ```bash
    cd pinturillo_app_back
