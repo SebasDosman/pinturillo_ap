@@ -1,0 +1,19 @@
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    border-radius: 20px;
+  }
+  
+  /* Mostrar solo la barra de desplazamiento */
+  ::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+    border: 5px solid #2563EB ; /* Grosor de la barra de desplazamiento */
+  }
+
+  @media (min-width: 1024px) {
+    ::-webkit-scrollbar-thumb {
+        background-color: var(--main-blue);
+        border: 5px solid white; /* Grosor de la barra de desplazamiento */
+      }
+  }

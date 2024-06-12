@@ -1,0 +1,29 @@
+<div class="content">
+  <div class="title hidden lg:block">
+    <img src="../../../../../assets/images/title.PNG">
+  </div>
+  <div class="room-list">
+    <div class="room" *ngFor="let room of roomsList" (click)="selectedRoom($event, room)" routerLink="/room">
+      <div class="room-content">
+        <div class="room-img">
+          <img src="../../../../../assets/svg/room_mc.svg" alt="Avatar" />
+        </div>
+        <div class="room-details">
+          <div class="room-name">
+            <h2>{{ room.name }} <span>#{{room.id}}</span></h2>
+
+          </div>
+          <div class="room-info">
+            <i class='bx bxs-user'>
+              <span>{{room.categories.name}}</span>
+            </i>
+
+            <!-- <i class='bx bxs-trophy'>
+              <span>{{room.state}}</span>
+            </i> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

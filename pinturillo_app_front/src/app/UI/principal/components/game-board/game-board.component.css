@@ -1,0 +1,21 @@
+
+
+
+.colors-1, .colors-2{
+    user-select: none;
+}
+
+.letra{
+    border-bottom: 1px solid black;
+}
+
+
+.time{
+    transition: width 2s ease; /* Transición suave de la anchura */
+}
+
+.non-interactive {
+    pointer-events: none;
+    cursor: none;
+    user-select: none;
+  }

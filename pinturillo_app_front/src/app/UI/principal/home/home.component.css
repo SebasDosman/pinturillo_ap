@@ -1,0 +1,288 @@
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../../assets/images/background.webp');
+    background-color: #2563EB;
+    background-size:auto;
+    background-position: center;
+}
+
+.logo{
+    width: 130px;
+    height: 130px;
+}
+
+.inputs{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 280px;
+    height: 220px;
+    border-radius: 8px;
+    margin-top: 70px;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.circulo{
+    width: 120px;
+    height: 120px;
+    border: 3px solid #2563EB;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.circulo img{
+    width: 120px;
+    height: 130px;
+    margin-top: -14px;
+    transition: 0.5s;
+}
+
+
+.card .btn{
+    width: 40px;
+    height: 40px;
+    background-color: #2563EB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-top: -45px;
+    margin-left: 90px;
+    z-index: 0;
+    transition: 0.5s;
+    color: #fff;
+    font-size: 25px;
+}
+
+.card .btn:hover{
+    /* background-color: rgba(255, 196, 112, 0.8); */
+    /* background-color: theme('colors.main-green'); */
+    transition: 0.5s;
+}
+
+.nick{
+    width: 100%;
+    margin-top: 30px;
+    padding: 4px;
+    border-radius: 4px;
+    border: 2px solid theme('colors.main-orange');
+    background-color: rgba(155, 155, 155, 0.257);
+    color: black;
+}
+
+.nick::placeholder{
+    color: black;
+}
+
+.boton i {
+    margin-right: 10px;
+}
+
+.boton{
+    text-align: center;
+    width: 130px;
+    background-color: #2563EB;
+    border-radius: 6px;
+    padding: 8px;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    color: #fff;
+    /* font-weight: bold; */
+    transition: 0.5s;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.boton img{
+    width: 20px;
+    margin-right: 10px;
+}
+
+.boton:hover{
+    /* background-color: theme('colors.main-blue'); */
+    color: white;
+    transition: 0.5s;
+}
+
+.title, .texto, .howplay{
+    display: none;
+}
+
+@media screen and (min-width: 720px) {
+
+    .content{
+        width: 80%;
+        height: 90%;
+        margin: auto;
+        border-radius: 14px;
+        background-color: #fff;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo{
+        height: 10vw;
+    }
+
+    .title{
+        font-weight: bold;
+        color: #2563EB;
+        display: block;
+        margin-top: -18px;
+        margin-bottom: 10px;
+    }
+
+    .fila{
+        width: 92%;
+        height: 100%;
+    }
+
+    .form{
+        width: 50%;
+    }
+
+    .card{
+        width: 100%;
+        height: 100%;
+        margin: 0 20px 0 20px;
+        background-color: white;
+    }
+
+    .inputs{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .iz{
+        width: 40%;
+        height: 20vw;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+    .der{
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .circulo{
+        width: 100%;
+        height: 65%;
+        border: 6px solid #2563EB;
+    }
+
+    .circulo img{
+        width: 100%;
+        height: auto;
+        margin-top: -20px;
+    }
+
+    .texto{
+        width: 80%;
+        display: block;
+    }
+
+    .nick{
+        width: 85%;
+        height: 4vw;
+        padding: 8px;
+        border-radius: 4px;
+        border: 2px solid theme('colors.main-orange');
+        background-color: rgba(128, 128, 128, 0.378);
+        color: white;
+    }
+
+    .nick::placeholder{
+        letter-spacing: 1px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .boton{
+        width: 160px;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .howplay{
+        width: 40%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 60px;
+        border-radius: 16px;
+        background-color: #2563EB;
+        border: 2px solid rgba(48, 48, 48, 0.156);
+    }
+
+    .howplay h1{
+        font-weight: bold;
+        color: white;
+        margin-top: 14px;
+    }
+
+    .tarjeta{
+        width: 80%;
+        height: 18vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 14px;
+        text-align: center;
+    }
+
+    .tarjeta img{
+        width: 65%;
+    }
+
+    .tarjeta h2{
+        color: white;
+        font-weight: bold;
+        margin-top: 10px;
+    }
+
+    .tarjeta h4{
+        width: 94%;
+        color: white;
+        letter-spacing: 0.5px;
+        margin-bottom: 20px;
+    }
+
+    .howplay .botones{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: auto;
+    }
+
+    .howplay .botones button{
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        margin-right: 20px;
+        background-color: rgba(255, 255, 255, 0.493);
+        cursor: pointer;
+        transition: 0.8s;
+    }
+
+    #tarjeta2, #tarjeta3{
+        display: none;
+    }
+
+    #boton1{
+        background-color: #fff;
+        transition: 0.8s;
+    }
+
+}

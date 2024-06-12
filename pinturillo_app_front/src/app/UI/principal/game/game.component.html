@@ -1,0 +1,36 @@
+
+
+<div class="container
+             h-screen w-100 lg:flex lg:p-10 lg:flex-row-reverse p-5">
+    
+    <app-game-board></app-game-board>
+
+    <div class="menu w-full h-1/3 lg:w-1/3 lg:h-full flex flex-row lg:flex-col lg:relative">
+        <app-game-users class="w-1/3 lg:w-full lg:h-full"></app-game-users>
+        <app-game-chat  class="w-2/3 lg:h-1/3 lg:absolute lg:bottom-0 lg:left-full lg:ml-5"></app-game-chat>
+    </div>
+</div>
+
+
+<div class="ranking absolute w-screen h-screen bg-gray-800 bg-opacity-50 flex flex-row justify-center items-center" *ngIf="showRanking && usersRanking.length > 0" (click)="mostrarModal(false)">
+    <div class="w-11/12 h-96  bg-blue-800 rounded-lg md:w-96 lg:max-w-lg flex justify-center items-center">
+        <div class="w-11/12 h-80 bg-blue-800 rounded-lg md:w-80 lg:max-w-lg flex flex-col justify-center items-start">
+            <div class="pos-1 bg-blue-600 w-full h-1/3 rounded-t-lg flex flex-row justify-between items-center p-3">
+                <img [src]="  getUserImage(usersRanking[0].userAvatar)" class="rounded-lg w-20">
+                <p class="text-2xl text-white">{{ usersRanking[0].userName}}</p>
+                <p class="text-6xl text-white">#1</p>
+            </div>
+            <div class="pos-2 bg-blue-500 w-full h-1/3 flex flex-row justify-between items-center p-3">
+                <img [src]="   getUserImage(usersRanking[1].userAvatar)" class="rounded-lg w-20">
+                <p class="text-2xl text-white">{{ usersRanking[1].userName}}</p>
+                <p class="text-5xl text-white">#2</p>
+            </div>
+            <div class="pos-3 bg-blue-400 w-full h-1/3 rounded-b-lg flex flex-row justify-between items-center p-3" *ngIf="usersRanking[2]">
+                <img [src]="  getUserImage( usersRanking[2].userAvatar )" class="rounded-lg w-20">
+                <p class="text-2xl text-white">{{ usersRanking[2].userName}}</p>
+                <p class="text-4xl text-white">#3</p>
+            </div>
+        </div>
+    </div>
+
+</div>

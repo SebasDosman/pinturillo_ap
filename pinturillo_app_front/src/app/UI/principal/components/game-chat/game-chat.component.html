@@ -1,0 +1,13 @@
+<section class="cont h-full bg-blue-600  lg:rounded-xl p-3">
+
+    <div class="chat-cont w-full bg-blue-500 h-full rounded-xl flex flex-col justify-center">
+        <div #answers class="answers h-3/4 pl-6 pt-3 pr-6">
+            
+            <p *ngFor="let answer of messages" class="text-white font-medium mb-2"><span class="font-normal text-sm ml-3">{{answer}}</span></p>
+        </div>
+        <div class="input-cont w-full h-1/4 flex flex-row justify-center items-center" *ngIf="canSendMessage">
+            <input type="text" (keyup.enter)="sendMessage($event)"  class="text w-11/12 bg-blue-600 text-white p-2 rounded-lg" placeholder="Respuesta">
+        </div>
+    </div>
+
+</section>

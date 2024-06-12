@@ -1,0 +1,23 @@
+
+
+input:focus{
+    outline: none;
+}
+
+
+::-webkit-scrollbar {
+    background-color: transparent;
+    border-radius: 20px;
+  }
+  
+  /* Mostrar solo la barra de desplazamiento */
+  ::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 20px;
+    border: 5px solid #3182ce; /* Grosor de la barra de desplazamiento */
+  }
+
+  .answers{
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }

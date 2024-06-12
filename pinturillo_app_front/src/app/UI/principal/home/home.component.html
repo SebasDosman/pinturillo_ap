@@ -1,0 +1,76 @@
+<div class="contenedor flex justify-center bg-gradient-to-b from-purple-900 to-pink-500">
+  <!-- bg-gradient-to-b from-red-500 to-yellow-400 -->
+
+  <div class="content flex flex-col items-center ">
+
+    <img class="logo my-4" src="../../../../favicon.ico" alt="logo.ico">
+    <h1 class="title text-md">PintuApp</h1>
+
+    <div class="fila flex mb-12">
+
+      <form class="form" [formGroup]="loginForm" (ngSubmit)="submitForm()">
+
+        <div class="card flex flex-col items-center">
+
+          <div class="inputs flex">
+            <!-- Avatars -->
+            <div class="iz flex flex-col">
+              <div class="circulo flex justify-center"><img [src]="avatarUrl" alt="avatar.png"></div>
+              <button type="button" class="btn my-2" (click)="changeAvatar()">
+                <i class="fa-solid fa-rotate-right"></i>
+              </button>
+            </div>
+
+            <div class="der flex flex-col items-center text-center">
+              <label class="texto text-gray-700 text-md font-bold mb-2" for="name">
+                Elige un personaje y un apodo
+              </label>
+              <input formControlName="roomName" class="py-2 mt-3 shadow appearance-none border rounded w-5/6 md:py-4 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nick" type="text" formControlName="nick" placeholder="MiNickName123">
+            </div>
+
+          </div>
+
+          <button type="submit" class="boton">
+            <i class="fa-solid fa-play"></i>
+            Iniciar
+          </button>
+
+        </div>
+
+      </form>
+
+      <div class="howplay flex">
+
+        <h1>¿Cómo jugar?</h1>
+
+        <div class="tarjeta flex" id="tarjeta1">
+          <img src="../../../../assets/images/tuto_1.png" alt="imagen.png">
+          <h2>1. Hablando es mejor</h2>
+          <h4>Invita a tus amigos a una llamada de voz (p. Ej: Discord, Zoom)</h4>
+        </div>
+
+        <div class="tarjeta flex" id="tarjeta2">
+          <img src="../../../../assets/images/tuto_2.png" alt="imagen.png">
+          <h2>2. Hora de adivinar</h2>
+          <h4>Alguien estara dibujando y deberas de escribir en el chat lo que es.</h4>
+        </div>
+
+        <div class="tarjeta flex" id="tarjeta3">
+          <img src="../../../../assets/images/tuto_3.png" alt="imagen.png">
+          <h2>3. Hora de dibujar</h2>
+          <h4>Vas dibujar la palabra que te alla salido.</h4>
+        </div>
+
+        <div class="botones flex">
+          <button id="boton1" (click)="changeTarjeta('tarjeta1', 'boton1')"></button>
+          <button id="boton2" (click)="changeTarjeta('tarjeta2', 'boton2')"></button>
+          <button id="boton3" (click)="changeTarjeta('tarjeta3', 'boton3')"></button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
